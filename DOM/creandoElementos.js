@@ -8,17 +8,17 @@ const agregarCaja = () => {
 	/*
 		📌 2. Agregamos texto y atributos
 	*/
-	nuevaCaja.innerText = 'Nueva Caja!';
+	nuevaCaja.innerText = 'David';
 	// nuevaCaja.setAttribute('id', 'nuevo-id');
 	nuevaCaja.setAttribute('class', 'caja activa');
 
 	/*
 		📌 3. Agregamos el elemento al DOM
 	*/
-	const contenedor = document.getElementById('contenedor1');
+	const contenedor = document.getElementById('contenedor2');
 
 	// .appendChild() - Agrega un elemento al final
-	// contenedor.appendChild(nuevaCaja);
+	 contenedor.appendChild(nuevaCaja);
 
 	/* .insertAdjacentElement() - Nos permite agregar un elemento 
 	Valores:
@@ -30,5 +30,5 @@ const agregarCaja = () => {
 	// contenedor.insertAdjacentElement('afterbegin', nuevaCaja);
 
 	// .replaceWith() - Nos permite remplazar el elemento por otro
-	document.querySelector('#contenedor1 .caja').replaceWith(nuevaCaja);
+	//document.querySelector('#contenedor1 .caja').replaceWith(nuevaCaja);
 };
