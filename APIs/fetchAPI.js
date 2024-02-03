@@ -17,13 +17,13 @@ const endpoint = 'https://api.npoint.io/53cb575a789e51933e0b';
 // 		console.log(error);
 // 	});
 
-/*
+/* 
 	📌 Ejemplo con Async/Await
 */
 const obtenerDatos = async () => {
 	const respuesta = await fetch(endpoint);
 	const datos = await respuesta.json();
 
-	console.log(datos);
+	console.log(datos); 
 };
 obtenerDatos();
